@@ -1,6 +1,0 @@
-a=input('Você me ama?\n(sim/não) ')
-assert a=='sim' or a=='não',('Escreve direito.')
-if a=='sim':
-	print('Também te amo vey')
-else:
-	print('Vai se fuder')

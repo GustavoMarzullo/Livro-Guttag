@@ -1,17 +1,15 @@
 #Abordagem da bisseção para achar o log
-#log(x) = y <=> np.e^y=x
-import numpy as np
-import sys
-sys.setrecursionlimit(15000000)
+#log(x) = y <=> 10^y=x
+
 def log(x,erro=1e-5):
         numint=0
         inf=0
         sup=x
         y=(inf+sup)/2
         if x>= 1:
-                while abs(np.e**y-x)>=erro:
+                while abs(10**y-x)>=erro:
                         numint+=1
-                        if np.e**y>x:
+                        if 10**y>x:
                                 sup=y
                         else:
                                 inf=y
@@ -22,9 +20,9 @@ def log(x,erro=1e-5):
                         x=x**-1
                         sup=x
                         y=(inf+sup)/2
-                        while abs(np.e**y-x)>=erro:
+                        while abs(10**y-x)>=erro:
                                 numint+=1
-                                if np.e**y>x:
+                                if 10**y>x:
                                         sup=y
                                 else:
                                         inf=y

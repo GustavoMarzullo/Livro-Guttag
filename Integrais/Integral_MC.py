@@ -27,5 +27,3 @@ def integral(f,a,b,n=1000,x=100):
     valor_medio=stats.tmean(valores_medios)
     casas=siginificativos(IC)
     return round(valor_medio,casas),round(IC,casas) 
-
-

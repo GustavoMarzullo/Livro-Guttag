@@ -1,6 +1,7 @@
-import numpy
+import numpy 
+
 #regra de simpson para integrais definidas
-def int(a,b,n=1e3 ):
+def integral(f,a,b,n=1e3 ):
     '''Usa a regra de simpson para retornar uma integral definida. Precisa-se definir uma função f anteriormente.'''
     assert n%2==0, 'O n precisa ser par.'
     deltax=(b-a)/n
